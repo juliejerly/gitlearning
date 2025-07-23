@@ -1,0 +1,15 @@
+{
+  "URLS": {
+    "QA_URL":"https://www.saucedemo.com/"
+  },
+
+  "VALID_CREDENTIALS": {
+    "USERNAME": "standard_user",
+    "PASSWORD": "secret_sauce"
+  },
+
+   "INVALID_CREDENTIALS": {
+    "USERNAME": "standard_user",
+    "PASSWORD": "secret_sauce1"
+  }
+}
