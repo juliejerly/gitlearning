@@ -1,0 +1,27 @@
+name: Run on Push
+
+on:
+  push:
+    branches:
+      - 'main'  # Triggers on all branches (or use specific ones like 'main')
+
+jobs:
+  build:
+    runs-on: windows
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run tests
+        run: |
+          pytest
