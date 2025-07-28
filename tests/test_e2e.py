@@ -7,7 +7,7 @@ from pages.home_page import HomePage
 from pages.login_page import LoginPage
 
 
-@pytest.mark.xdist_group(name="settings")
+# @pytest.mark.xdist_group(name="settings")
 class TestsE2eFlow:
 
     @pytest.mark.parametrize("credentials, selector, expected", [
