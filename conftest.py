@@ -14,5 +14,6 @@ def page():
 
 @fixture
 def get_test_data():
-    with open("C:/Users/julie.g.DC/PycharmProjects/learnplaywright/data/test_data.json") as f:
+    # with open("C:/Users/julie.g.DC/PycharmProjects/learnplaywright/data/test_data.json") as f:
+    with open("data/test_data.json") as f:
         return json.load(f)
